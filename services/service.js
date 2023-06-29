@@ -23,7 +23,7 @@ class CreateUser {
 
     static async generatetoken(tokendata, secretkey){
         try{
-            return jwt.sign(tokendata,secretkey, {expresIn:'1D'})
+            return jwt.sign(tokendata,secretkey, {expiresIn:'1D'})
         }
         catch(err){
             console.log(err);
