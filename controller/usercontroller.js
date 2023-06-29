@@ -30,7 +30,7 @@ const Login=async(req,res)=>{
             email: user.email
         }
 
-        const token = await UserService.generatetoken(tokenData, 'secretkey');
+        const token = await service.generatetoken(tokenData, 'secretkey');
         res.status(200).json({
             status: true,
             token: token
