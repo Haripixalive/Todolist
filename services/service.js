@@ -14,7 +14,7 @@ class CreateUser {
 
     static async checkuser(email){
         try{
-            return await usermodel.findOne(email)
+            return await usermodel.findOne({email})
         }
         catch(err){
             console.log(err);
