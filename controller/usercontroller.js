@@ -33,7 +33,7 @@ const Login=async(req,res)=>{
         const token = await service.generatetoken(tokenData, 'secretkey');
         res.status(200).json({
             status: true,
-            token: tokenData
+            token: token
         })
     }
     catch(err){
