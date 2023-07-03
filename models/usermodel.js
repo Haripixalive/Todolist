@@ -22,6 +22,5 @@ UserSchema.pre('save',async function()
     user.password=hash;
 })
 
-
 const usermodel = mongoose.model('anime',UserSchema)
 module.exports=usermodel

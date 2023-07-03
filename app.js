@@ -1,8 +1,10 @@
 const e=require('express')
 const app=e()
-const router= require('./router/userrouter')
+const userrouter= require('./router/userrouter')
+const todorouter = require('./router/todorouter')
 const parser= require('body-parser')
 
 app.use(parser.json())
-app.use(router)
+app.use(userrouter)
+app.use(todorouter)
 module.exports=app

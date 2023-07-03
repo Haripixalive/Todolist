@@ -7,10 +7,10 @@ const dburl="mongodb+srv://haripriyan29:haripriyan29@cluster0.4o52ldg.mongodb.ne
 
 mongoose.connect(dburl)
 .then((result)=>{
-    console.log('Database connected');
+    console.log('Database connected')
 })
 .catch((err)=>{
-    console.log(err);
+    console.log(err)
 })
 
 app.get("/",(req,res)=>{
